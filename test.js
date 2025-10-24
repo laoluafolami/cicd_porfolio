@@ -94,6 +94,21 @@ test('script.js contains scroll event listener', () => {
     assertFileContains('script.js', 'scroll');
 });
 
+test('index.html contains contact form', () => {
+    assertFileContains('index.html', 'contact-form');
+});
+
+test('index.html contains theme toggle button', () => {
+    assertFileContains('index.html', 'theme-toggle');
+});
+
+test('script.js contains dark mode functionality', () => {
+    assertFileContains('script.js', 'dark-mode');
+});
+
+test('styles.css contains dark mode styles', () => {
+    assertFileContains('styles.css', 'body.dark-mode');
+});
 // Print results
 console.log('\n-------------------');
 console.log(`Tests passed: ${testsPassed}`);

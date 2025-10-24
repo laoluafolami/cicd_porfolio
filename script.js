@@ -42,3 +42,27 @@ document.querySelectorAll('.project-card').forEach(card => {
 });
 
 console.log('Portfolio loaded successfully!');
+
+// Dark mode toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.textContent = '☀️';
+}
+
+themeToggle?.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    
+    // Update icon and save preference
+    if (body.classList.contains('dark-mode')) {
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    }
+});
