@@ -32,7 +32,7 @@ The CI/CD pipeline:
 
 ## 🌐 Live Site
 
-Visit the live site at: [https://laoluafolami.github.io/cicd_porfolio/](https://laoluafolami.github.io/my-portfolio/)
+Visit the live site at: [https://laoluafolami.github.io/cicd_porfolio/](https://laoluafolami.github.io/cicd_porfolio/)
 
 ## 📝 License
 
